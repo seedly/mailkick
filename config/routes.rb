@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  unless respond_to?(:has_named_route?) && has_named_route?("mailkick")
-    mount Mailkick::Engine => "/mailkick" if Mailkick.mount
+  unless respond_to?(:has_named_route?) && has_named_route?("mail")
+    mount Mailkick::Engine => "/mail" if Mailkick.mount
   end
 end
 
